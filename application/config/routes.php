@@ -56,3 +56,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['Inicio'] = 'Inicio_controller/index';
 $route['Edificios'] = 'Edificios_controller/index';
 $route['Lugares'] = 'Secciones_controller/index';
+
+$route['Lugar'] = 'Seccion_controller/index';
