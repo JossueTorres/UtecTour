@@ -2,9 +2,9 @@
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-<script src="<?php echo base_url('/UtecTour/lib/bootstrap/dist/js/bootstrap.min.js');?>" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="<?php echo base_url('/lib/bootstrap/dist/js/bootstrap.min.js');?>" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
-<script src="<?php echo base_url('/UtecTour/lib/jquery-3.4.1.min.js');?>"></script>
+<script src="<?php echo base_url('/lib/jquery-3.4.1.min.js');?>"></script>
 <script> 
  
 var m_tr = true;
@@ -36,7 +36,7 @@ if(m_tr){
     // Animation complete.
   });
     $(".cont-ico-menu").css("background","#33001A")
-    $(".img-bar  img").attr("src","<?php echo base_url('/Recursos/img/icon-bars.png');?>").animate({
+    $(".img-bar  img").attr("src","<?php echo base_url('/img/icon-bars.png');?>").animate({
     opacity: 0.5,
     left: "+=10"
   }, 500, function() {
@@ -51,7 +51,7 @@ if(m_tr){
     // Animation complete.
   });
     $(".cont-ico-menu").css("background","")
-    $(".img-bar  img").attr("src","<?php echo base_url('/Recursos/img/icon-bars.svg');?>").animate({
+    $(".img-bar  img").attr("src","<?php echo base_url('/img/icon-bars.svg');?>").animate({
     opacity: 1,
     left: "-=10"
   }, 500, function() {
@@ -75,36 +75,6 @@ $(".ddsd").click(function() {
   console.log(frameMapa);
   $(".mapa_content").append(frameMapa);
 
-   let scanner = new Instascan.Scanner(
-             {
-                 video: document.getElementById('preview')
-             }
-         );
-         scanner.addListener('scan', function(content) {
-             alert('Conenido: ' + content);
-           window.open(content, "_blank");
-       });
-         var ArrCamaras 
-         var contCam = 0;
-         Instascan.Camera.getCameras().then(cameras => 
-         {
-           ArrCamaras = cameras;
-             if(cameras.length > 0){
-                if(cameras.length == 1){$(".content-btn-cmb-camara").addClass("hidden")}
-               scanner.start(cameras[0]);
-            } else {
-                 console.error("no existe camara en el dispositivo!");
-             }
-         });
-         $(".content-btn-cmb-camara").click(function(){
-        contCam ++;
-           if(contCam <= ArrCamaras.length){
-              
-              scanner.start(cameras[contCam]);
-            }else{
-               contCam =0;
-             scanner.start(cameras[contCam]);
-            }
-        });
+   
 </script>
 </html>

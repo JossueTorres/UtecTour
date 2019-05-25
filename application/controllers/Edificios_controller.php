@@ -5,7 +5,7 @@ class Edificios_controller extends CI_Controller
 {
 	public function index()
 	{
-		$url = 'http://localhost:8080/TUTEC/UtecTourServices/Edificios/listado';
+		$url = 'http://localhost:8080/UtecTourServices/Edificios/listado';
 		//creamos
 		$ch = curl_init($url);
 

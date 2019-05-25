@@ -5,7 +5,7 @@ class Secciones_controller extends CI_Controller
 {
 	public function index()
 	{
-		$url = 'http://localhost:8080/TUTEC/UtecTourServices/Seccion/listado';
+		$url = 'http://localhost:8080/UtecTourServices/Seccion/listado';
 		//creamos
 		$ch = curl_init($url);
 
