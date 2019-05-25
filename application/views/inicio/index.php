@@ -1,19 +1,18 @@
 <div class="fondo-sld row animar-entrada-up">
     <div id="carouselExampleControls" class="carousel slide div-sld" data-ride="carousel">
         <div class="carousel-inner" style="  position:static;">
-            <?php if (!empty($lstBanner)) {
-                 $cont =0;
-                foreach ($lstBanner as $lb) { ?>
-                if($cont == 0){
-                    <div class="carousel-item active">
-                    $cont = 1;    
-                }else{
-                    <div class="carousel-item"> 
-                    }
-                    <img class="d-block w-100" style="  position:static;" src="<?php echo base_url('/TourUtec/Recursos/banner/' . $lb->ban_imagen)  ?>">
-                    </div>
-                <?php }
-        }    ?>
+            <div class="carousel-item active">
+                <img class="d-block w-100" style="  position:static;" src="<?php echo base_url('/UtecTour/img/banner1.jpg') ?>">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="  position:static;" src="<?php echo base_url('/UtecTour/img/banner2.jpg')  ?>">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="  position:static;" src="<?php echo base_url('/UtecTour/img/banner3.jpg')  ?>">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="  position:static;" src="<?php echo base_url('/UtecTour/img/banner4.jpg')  ?>">
+            </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
