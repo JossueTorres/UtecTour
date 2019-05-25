@@ -8,8 +8,7 @@
    <link  rel="stylesheet" href="<?php echo base_url('/UtecTour/lib/bootstrap/dist/css/bootstrap.min.css');?>"/>
    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
    <script src="<?php echo base_url('/UtecTour/lib/greensock-js/src/minified/TweenMax.min.js');?>"></script>
-   <!-- <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>	 -->
-   <script type="text/javascript" src="<?php echo base_url('/UtecTour/lib/instascan.min.js');?>" ></script>	
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>	
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="<?php echo base_url('/UtecTour/lib/fontawesome/css/all.css');?>" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Tour Utec</title>
@@ -328,8 +327,8 @@ margin: 10px;
     <div class="img-bar"><img src="<?php echo base_url('/UtecTour/img/icon-bars.svg');?>" alt=""></div>
   </div>
     <div class="main-menu animar-entrada-left">
-        <a  href=""><i class="fas fa-qrcode"></i> QR</a>
-        <a  href=""><i class="fas fa-home"></i> Inicio</a>
+        <a  href="<?php echo base_url('/UtecTour/Lector');?>"><i class="fas fa-qrcode"></i> QR</a>
+        <a  href="<?php echo base_url('/UtecTour/Inicio');?>"><i class="fas fa-home"></i> Inicio</a>
         <a  href="<?php echo base_url('/UtecTour/Edificios');?>">Edificios</a>
         <a  href="<?php echo base_url('/UtecTour/Lugares');?>">Lugares</a>
         <a  style="float:left; margin: 0%;" href=""><b>TOUR UTEC</b></a>

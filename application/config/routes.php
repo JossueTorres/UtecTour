@@ -56,3 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['Inicio'] = 'Inicio_controller/index';
 $route['Edificios'] = 'Edificios_controller/index';
 $route['Lugares'] = 'Secciones_controller/index';
+$route['Login'] = 'Autenticar_controller/index';
+$route['Login/Ingresar'] = 'Autenticar_controller/Login';
+$route['Logout'] = 'Autenticar_controller/logout';
+$route['Lector'] = 'Lector_controller/index';

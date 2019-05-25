@@ -75,36 +75,6 @@ $(".ddsd").click(function() {
   console.log(frameMapa);
   $(".mapa_content").append(frameMapa);
 
-   let scanner = new Instascan.Scanner(
-             {
-                 video: document.getElementById('preview')
-             }
-         );
-         scanner.addListener('scan', function(content) {
-             alert('Conenido: ' + content);
-           window.open(content, "_blank");
-       });
-         var ArrCamaras 
-         var contCam = 0;
-         Instascan.Camera.getCameras().then(cameras => 
-         {
-           ArrCamaras = cameras;
-             if(cameras.length > 0){
-                if(cameras.length == 1){$(".content-btn-cmb-camara").addClass("hidden")}
-               scanner.start(cameras[0]);
-            } else {
-                 console.error("no existe camara en el dispositivo!");
-             }
-         });
-         $(".content-btn-cmb-camara").click(function(){
-        contCam ++;
-           if(contCam <= ArrCamaras.length){
-              
-              scanner.start(cameras[contCam]);
-            }else{
-               contCam =0;
-             scanner.start(cameras[contCam]);
-            }
-        });
+   
 </script>
 </html>
