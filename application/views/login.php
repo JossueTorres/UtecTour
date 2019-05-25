@@ -3,13 +3,8 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>TourUtec|Admin</title>
-	<!-- Bootstrap 3.3.7 -->
-	<link rel="stylesheet" href="<?php echo base_url('/UtecTourAdmin/assets/bower_components/bootstrap/dist/css/bootstrap.min.css'); ?>">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="<?php echo base_url('/UtecTourAdmin/assets/bower_components/font-awesome/css/font-awesome.min.css'); ?>">
-	<!-- AdminLTE App -->
-	<script src="<?php echo base_url('/UtecTourAdmin/assets/dist/js/adminlte.min.js'); ?>"></script>
+	<title>TourUtec|Login</title>
+	<link  rel="stylesheet" href="<?php echo base_url('/lib/bootstrap/dist/css/bootstrap.min.css');?>"/>
 	<style>
 		.MainCont {
 			height: auto;
@@ -47,7 +42,7 @@
 		<div class="MainCont">
 			<h1 class="Titulo">Tour Utec</h1>
 			<div class="panel panel-primary">
-				<form method="POST" action="<?php echo base_url('/UtecTour/Login/Ingresar'); ?>" name="formLogin">
+				<form method="POST" action="<?php echo base_url('/Login/Ingresar'); ?>" name="formLogin">
 					<div class="panel-header">
 						<h4 class="onH">Iniciar Sesion</h4>
 					</div>
@@ -64,10 +59,7 @@
 	</center>
 
 
-	<!-- jQuery 3 -->
-	<script src="<?php echo base_url('/UtecTourAdmin/assets/bower_components/jquery/dist/jquery.min.js'); ?>"></script>
-	<!-- Bootstrap 3.3.7 -->
-	<script src="<?php echo base_url('/UtecTourAdmin/assets/bower_components/bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/lib/jquery-3.4.1.min.js');?>"></script>
 </body>
 
 </html>

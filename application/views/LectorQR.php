@@ -16,8 +16,9 @@ let scanner = new Instascan.Scanner(
              }
          );
          scanner.addListener('scan', function(content) {
-             alert('Conenido: ' + content);
-           window.open(content, "_blank");
+           var url = "<?php echo base_url('/seccion/');  ?>"
+             //alert('Conenido: ' + url + 1);
+           window.open(url + content + "/1"); 
        });
          var ArrCamaras 
          var contCam = 0;
