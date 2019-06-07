@@ -11,7 +11,7 @@
 <div class="MainCont hidden">
 			<h1 class="Titulo">Tour Utec</h1>
 			<div class="panel panel-primary">
-				<form method="POST" action="<?php echo base_url('/Seccion'); ?>" name="formSeccion">
+				<form method="POST" action="<?php echo base_url('/Lugar'); ?>" name="formSeccion">
 					<div class="panel-header">
 						<h4 class="onH">Iniciar Sesion</h4>
 					</div>
@@ -33,7 +33,7 @@ let scanner = new Instascan.Scanner(
          );
          scanner.addListener('scan', function(content) {
            var url = "<?php echo base_url('/seccion/');  ?>"
-             //alert('Conenido: ' + url + 1);
+              //alert('Conenido: ' + url + 1);
              $("#ddlsec").val(content);
              $("#ddlidm").val(1);
           // window.open(url + content + "/1"); 
